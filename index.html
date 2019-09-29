@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>GelDesign | Internetiniai Tinklapiai</title>
+</head>
+<body id="home">
+  <!-- navbar -->
+  <nav id="navbar">
+    <h1 class="logo">
+      <span class="text-primary">
+        <i class="fas fa-drafting-compass"></i> Gel</span>Design
+    </h1>
+    <ul>
+      <li><a href="#home">Pradžia</a></li>
+      <li><a href="#paslaugos">Paslaugos</a></li>
+      <li><a href="#apie-mus">Apie</a></li>
+      <li><a href="#contact">Kontaktai</a></li>
+    </ul>
+  </nav>
+  <!-- header: showcase -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">
+        <span class="text-primary">Riba</span> tik Dangus
+      </h1>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis est sed temporibus tempore officia!
+      </p>
+      <a href="#apie-mus" class="btn">Daugiau</a>
+    </div>
+  </header>
+  <!-- section: mūsų paslaugos -->
+  <section id="paslaugos" class="bg-light py-1">
+    <div class="container">
+      <h2 class="m-heading text-center"><span class="text-primary">Mūsų</span> Paslaugos</h2>
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-desktop fa-2x"></i>
+          <div>
+            <h3>Tinklapių Struktūra</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+          </div>
+        </div>
+        <div class="item">
+            <i class="fas fa-pencil-ruler fa-2x"></i>
+            <div>
+              <h3>Tinklapių Dizainas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fas fa-stream fa-2x"></i>
+            <div>
+              <h3>SEO Paslaugos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: apie mus -->
+  <section id="apie-mus">
+    <div class="apie-mus-img"></div>
+    <div class="apie-mus-text bg-dark p-2">
+      <h2 class="m-heading"><span class="text-primary">Apie</span> Mus</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi error libero doloremque perferendis repudiandae possimus provident doloribus. Ut eius non saepe impedit alias reprehenderit quam, necessitatibus placeat hic ullam?</p>
+      <h3>Mūsų Komanda</h3>
+      <ul class="list">
+        <li>Linas Geležauskas: tinklapių struktūra ir dizainas</li>
+        <li>Karolis Balčiūnas: SEO</li>
+      </ul>
+    </div>
+  </section>
+  <!-- section: klientai -->
+  <section id="clients" class="py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">
+        <span class="text-primary">Mūsų</span> 
+        Klientai
+      </h2>
+      <div class="items py-1">
+        <div><img src="./img/logos/logo1.png" alt="client"></div>
+        <div><img src="./img/logos/logo4.png" alt="client"></div>
+        <div><img src="./img/logos/logo2.png" alt="client"></div>
+        <div><img src="./img/logos/logo5.png" alt="client"></div>
+      </div>
+    </div>
+  </section>
+  <!-- section: contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Kaip Mus rasti</h2>
+        <p>Susisiekite su mumis užpildydami šią formą</p>
+        <form action="process.php" method="POST">
+          <div class="form-group">
+            <label for="name">Vardas</label>
+            <input type="text" name="name" id="name" placeholder="įveskite vardą">
+          </div>
+          <div class="form-group">
+            <label for="email">El. Paštas</label>
+            <input type="email" name="email" id="email" placeholder="įveskite el. paštą">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefono Nr.</label>
+            <input type="text" name="phone" id="phone" placeholder="įveskite telefono Nr.">
+          </div>
+          <div class="form-group">
+            <label for="message">Pranešimas</label>
+            <textarea name="message" id="message" placeholder="rašyti pranešimą"></textarea>
+          </div>
+          <input type="submit" value="Siųsti" class="btn btn-dark">
+        </form>
+      </div>
+      <div class="map"></div>
+  </section>
+  <!-- footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2019, GelDesign, Visos teisės saugomos</p>
+    </div>
+  </footer>
+
+  <!-- jQuery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Local JS File -->
+  <script src="js/main.js"></script>
+  <!-- Google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA1OnL5n1o68cc0GwCCYlqAdR6sLT9xmc&callback=initMap"
+    async defer></script>
+</body>
+</html>
